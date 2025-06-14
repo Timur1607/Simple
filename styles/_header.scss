@@ -1,0 +1,118 @@
+.header{
+    background-image: url('../img/header/header-desktop.png');
+    // height: 500px;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: 90% 60px;
+    &-content{
+        width: 445px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 130px;
+        padding-bottom: 130px;
+
+        &__h1{
+            color: #4C5866;
+            font-family: 'Roboto', sans-serif;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 60px */
+            // width: 445px;
+        }
+        &__p{
+            color: #85859B;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 27px */
+            // width: 445px;
+        }
+        &__b{
+            border: 1px solid #7875FE;
+            padding: 20px 50px;
+            color: #7875FE;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 255px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                background: #7875FE;
+                color: #FFF;
+            }
+            &:focus{
+                background: #DAD9FB;
+                color: #7875FE;
+            }
+            &:focus{
+                border: 1px solid #4946B4;
+                background: #4946B4;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1060px){
+    .header{
+        background-image: url('../img/header/header-tablet.png');
+        &-content{
+            width: 390px;
+            padding: 65px 0;
+
+            &__h1{
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px){
+    .header{
+        background-image: url('../img/header/header.png');
+
+        &-content{
+            width: 290px;
+            gap: 20px;
+            padding: 60px 0;
+
+            &__h1{
+                font-size: 38px;
+            }
+            &__p{
+                font-size: 16px;
+            }
+            &__b{
+                width: 196px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px){
+    .header{
+        background-image: none;
+        &-content{
+            max-width: 400px;
+            width: 100%;
+            padding: 49px 0;
+
+            &__h1{
+                font-size: 30px;
+            }
+            &__p{
+                font-size: 14px;
+            }
+            &__b{
+                font-size: 18px;
+            }
+        }
+    }
+}

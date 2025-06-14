@@ -1,0 +1,82 @@
+.sketchbook{
+    padding: 114px 0;
+    background-image: url('../img/sketchbook/sketchbook.png');
+    background-repeat: no-repeat;
+    background-position: 85% 120px;
+    background-size: 50%;
+
+    &-content{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+
+        &__img{
+            display: none;
+        }
+
+        &__h2{
+            color: #666;
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 40px */
+            margin-bottom: 8px;
+        }
+        &__p{
+            color: #85859B;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 170%; /* 30.6px */
+            margin-bottom: 30px;
+        }
+    }
+}
+@media screen and (max-width:1200px){
+    .sketchbook{
+        background-size: 60%;
+        background-position: 130% 120px;
+    }
+}
+@media screen and (max-width:960px){
+    .sketchbook{
+        padding: 60px 0;
+        background-size: 50%;
+        background-position: 100% 50px;
+
+        &-content{
+            &__h2{
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width:870px){
+    .sketchbook{
+        padding: 60px 0;
+        background-size: 60%;
+        background-position: 120% 40px;
+    }
+}
+@media screen and (max-width:760px){
+    .sketchbook{
+        background-image: none;
+
+        &-content{
+            width: 100%;
+
+            &__img{
+                display: block;
+            }
+
+            &__h2{
+                font-size: 24px;
+            }
+            &__p{
+                font-size: 16px;
+            }
+        }
+    }
+}

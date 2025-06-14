@@ -1,0 +1,41 @@
+.companies{
+    background: #EBEBEB;
+    padding: 90px 0;
+
+    &-content{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .companies{
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 640px){
+    .companies{
+        &-media{
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+
+        &-content{
+            flex-wrap: nowrap;
+            flex-direction: row;
+
+        }
+
+        &-article{
+
+            &__img{
+                width: 150px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.rights{
+    background: #EBEBEB;
+    padding: 3px 0;
+
+    &-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__p{
+        color: #4C5866;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &_span{
+            color: #BCBCBC;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+}

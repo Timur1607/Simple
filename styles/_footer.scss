@@ -1,0 +1,54 @@
+.footer{
+    background: #4C5866;
+    padding: 28px 0;
+
+    &-hr{
+        display: none;
+        opacity: 0.2;
+        background: #DDD;
+        height: 1px;
+        width: 100%;
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-links{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    &-link{
+        cursor: pointer;
+        & path{
+            transition: 0.3s;
+        }
+        & rect{
+            transition: 0.3s;
+        }
+        &:hover path{
+            fill: #DAD9FB;
+        }
+        &:active path{
+            fill: #7875FE;
+        }
+        &:focus rect{
+            fill: #7875FE;
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .footer{
+        &-hr{
+            display: block;
+        }
+        &-content{
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
