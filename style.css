@@ -362,7 +362,7 @@
 
 @media screen and (max-width: 1060px) {
   .header {
-    background-image: url("../img/header/header-tablet.png");
+    background-image: url("./img/header/header-tablet.png");
   }
   .header-content {
     width: 390px;
@@ -374,7 +374,7 @@
 }
 @media screen and (max-width: 750px) {
   .header {
-    background-image: url("../img/header/header.png");
+    background-image: url("./img/header/header.png");
   }
   .header-content {
     width: 290px;
@@ -704,7 +704,7 @@
 }
 .sketchbook {
   padding: 114px 0;
-  background-image: url("../img/sketchbook/sketchbook.png");
+  background-image: url("./img/sketchbook/sketchbook.png");
   background-repeat: no-repeat;
   background-position: 85% 120px;
   background-size: 50%;
