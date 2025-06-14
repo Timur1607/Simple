@@ -304,7 +304,7 @@
   }
 }
 .header {
-  background-image: url("../img/header/header-desktop.png");
+  background-image: url("./img/header/header-desktop.png");
   background-repeat: no-repeat;
   background-position: 90% 60px;
 }

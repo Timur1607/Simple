@@ -17,7 +17,6 @@ let position__y = 0
 
 window.addEventListener('scroll', function() {
   position__y = window.scrollY;
-  console.log('Текущая позиция:', position__y, 'px');
   navWindow.style.top = `${position__y}px`
 });
 
